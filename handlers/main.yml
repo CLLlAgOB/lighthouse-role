@@ -1,0 +1,8 @@
+---
+# handlers file for lighthouse
+- name: Reload nginx service
+  become: true
+  ansible.legacy.command: nginx -s reload
+- name: Start nginx service
+  become: true
+  ansible.legacy.command: nginx
